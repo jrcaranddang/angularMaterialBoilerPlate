@@ -1,3 +1,22 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <md-toolbar color="primary">
+    <md-icon class="icon-20">cloud</md-icon>
+    Weather Watcher
+  </md-toolbar>
+  <md-sidenav-layout>
+    <md-sidenav align="end" mode="side" opened #sidenav>
+      <md-tab-group>
+        <md-tab>
+          <template md-tab-label>Saved Cities</template>
+          <template md-tab-content>
+            <button md-raised-button (click)="sidenav.close()" color="accent">CLOSE</button>
+          </template>
+        </md-tab>
+        <md-tab>
+          <template md-tab-label>Account Settings</template>
+          <template md-tab-content></template>
+        </md-tab>
+      </md-tab-group>
+    </md-sidenav>
+  </md-sidenav-layout>
+</div>
