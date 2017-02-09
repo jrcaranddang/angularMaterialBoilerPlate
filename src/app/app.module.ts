@@ -6,10 +6,12 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { DynamicGridComponent } from './dynamic-grid/dynamic-grid.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DynamicGridComponent
   ],
   imports: [
     BrowserModule,
