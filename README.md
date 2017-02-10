@@ -36,3 +36,16 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 Angular Material 2 Boilerplate project
 
 ***********************************************************************************************************************************************************
+
+Branch - weatherWatcher
+
+    default theme: indigo-pink
+    Nav
+    Sidenav
+
+TODO:
+Youtube - 8:57
+Angular Material 2 Jeremy Elbourn and Kara Erickson
+
+    **fix** sidenav: close button
+    grid-list
