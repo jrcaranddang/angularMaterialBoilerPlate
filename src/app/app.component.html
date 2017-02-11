@@ -1,8 +1,100 @@
 <md-toolbar>
-    <md-menu>
-        <md-icon>menu</md-icon>
-        <a href="#">Front End Web Development</a>
-    </md-menu>
+    <!--<button md-icon-button [mdMenuTriggerFor]="menu">
+            <md-icon>menu</md-icon>
+        </button>
+        <md-menu #menu="mdMenu">
+            <button md-menu-item>
+                <md-icon>perm_identity</md-icon>
+                <span>About</span>
+            </button>
+            <button md-menu-item disabled>
+                <md-icon>voicemail</md-icon>
+                <span>Projects</span>
+            </button>
+            <button md-menu-item>
+                <md-icon>notifications_off</md-icon>
+                <span>Contact</span>
+            </button>
+        </md-menu>-->
+        <ul class="nav flex-center">
+            <li class="nav-link"><a class="nav-item" href="#">A B O U T</a></li>
+            <li class="nav-link"><a class="nav-item" href="#">P R O J E C T S</a></li>
+            <li class="nav-link"><a class="nav-item" href="#">C O N T A C T</a></li>
+        </ul>
 </md-toolbar>
 
-<app-dynamic-grid></app-dynamic-grid>
+<div id="logo">
+    <a href="#">
+        <h1>
+            Da
+            <br>
+            ni
+            <br>
+            Lo
+        </h1>
+    </a>
+</div>
+
+<div id="top-right">
+    <p>
+        <span>Danilo Carandang</span>
+        <span>Web Developer</span>
+    </p>
+</div>
+
+<section class="hero flex-center full-section">
+    <div class="hero-desc">
+        <h1>
+            Hello!
+        </h1>
+    </div>
+
+    <div id="scroll-down">
+        <md-icon>details</md-icon>
+    </div>
+</section>
+
+<section class="about flex-center full-section">
+    <p>This is the section that I tell you about myself and how much I love to code.  Now you know how great I am!</p>
+</section>
+
+<section class="projects full-section">
+    <app-dynamic-grid></app-dynamic-grid>
+</section>
+
+<section class="contact flex-center full-section">
+    <div class="form-container">
+        <form action="submit" class="flex-center">
+            <md-grid-list cols="4" rowHeight="50px">
+                <md-grid-tile colspan="4" rowspan="1">
+                   <h1 class="form-desc flex-100">C O N T A C T</h1>
+                </md-grid-tile>
+                <md-grid-tile colspan="2" rowspan="1">
+                   <input type="text" placeholder="First Name*" class="flex-100 p-20" required>
+                </md-grid-tile>
+                <md-grid-tile colspan="2" rowspan="1">
+                    <input type="text" placeholder="Last Name" class="flex-100 p-20">
+                </md-grid-tile>
+                <md-grid-tile colspan="2" rowspan="1">
+                    <input type="text" placeholder="Email*" class="flex-100 p-20" required>
+                </md-grid-tile>
+                <md-grid-tile colspan="2" rowspan="1">
+                    <input type="text" placeholder="Estimated Budget" class="flex-100 p-20">
+                </md-grid-tile>
+                <md-grid-tile colspan="2" rowspan="3">
+                    
+                </md-grid-tile>
+                <md-grid-tile colspan="2" rowspan="3">
+                    <textarea name="message" id="form-text" placeholder="Message*" class="flex-100 p-20" required></textarea>
+                </md-grid-tile>
+                <md-grid-tile colspan="2" rowspan="1">
+                    
+                </md-grid-tile>
+                <md-grid-tile colspan="2" rowspan="1">
+                    <span class="flex-100">*Requested Field</span>
+                    <button type="submit" class="flex-100">S E N D</button>
+                </md-grid-tile>
+            </md-grid-list>
+        </form>
+    </div>
+</section>

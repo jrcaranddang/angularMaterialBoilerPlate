@@ -4,12 +4,156 @@
 :root {
     --primary-color: #03FE9A;
     --accent-color: #03e5fe;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
 }
 
 body {
     font-family: "Raleway", sans-serif;
+    background: #333;
+    margin: 0;
 }
 
+p {
+    font-weight: 400;
+    text-transform: none;
+    line-height: 20px;
+}
+
+span {
+    display: block;
+}
+
+#top-right {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    top: 150px;
+    transform: rotate(-90deg);
+    z-index: 99;
+}
+
+#top-right p {
+    margin: 0;
+}
+
+#logo {
+    position: fixed;
+    top: 57px;
+    left: 50px;
+    z-index: 99;
+}
+
+#logo a {
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+
+#scroll-down {
+    align-self: center;
+    bottom: 5%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+}
+
+/********************common********************/
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-section {
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+}
+
+.flex-100 {
+    flex: 1 100%; 
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+/********************nav section********************/
 md-toolbar {
-    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    /*background: linear-gradient(10deg, var(--primary-color), var(--accent-color));*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 97;
+    padding: 60px 0 80px;
+}
+
+md-toolbar ul {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.nav-item {
+    flex: 1 auto;
+    color: inherit;
+    padding: 20px;
+    text-decoration: none;
+}
+
+/********************hero section********************/
+.hero {
+}
+
+.hero-desc {
+    align-self: center;
+    display: flex;
+}
+
+/********************about section********************/
+.about {
+    height: 50vh;
+    min-height: 500px;
+}
+
+/********************projects section********************/
+.projects {
+    height: 100%;
+}
+
+/********************contact section********************/
+.contact {
+}
+
+.form-container md-grid-list {
+    margin: 5%;
+    width: 98vw;
+}
+
+.form-container textarea {
+    font-family: inherit;
+    height: 112px;
+    line-height: 1;
+}
+
+.form-container button {
+    color: inherit;
+    background: none;
+    border: 2px solid;
 }
