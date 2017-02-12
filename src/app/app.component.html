@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<md-toolbar>
+<md-toolbar id="top" class="flex-center">
     <!--<button md-icon-button [mdMenuTriggerFor]="menu">
             <md-icon>menu</md-icon>
         </button>
@@ -17,10 +16,10 @@
                 <span>Contact</span>
             </button>
         </md-menu>-->
-        <ul class="nav flex-center">
-            <li class="nav-link"><a class="nav-item" href="#">A B O U T</a></li>
-            <li class="nav-link"><a class="nav-item" href="#">P R O J E C T S</a></li>
-            <li class="nav-link"><a class="nav-item" href="#">C O N T A C T</a></li>
+        <ul class="nav flex-center flex-100">
+            <li class="nav-link"><a class="nav-item" href="#about">A B O U T</a></li>
+            <li class="nav-link"><a class="nav-item" href="#project">P R O J E C T S</a></li>
+            <li class="nav-link"><a class="nav-item" href="#contact">C O N T A C T</a></li>
         </ul>
 </md-toolbar>
 
@@ -50,57 +49,64 @@
         </h1>
     </div>
 
-    <div id="scroll-down">
+    <div id="scroll-down" (click)="scrollDown()">
         <md-icon>details</md-icon>
     </div>
 </section>
 
-<section class="about flex-center full-section">
+<div id="fab">
+    <button md-mini-fab><md-icon>arrow_drop_up</md-icon></button>
+</div>
+
+<section class="about flex-center full-section" id="about">
     <p>This is the section that I tell you about myself and how much I love to code.  Now you know how great I am!</p>
 </section>
 
-<section class="projects full-section">
+<section class="projects full-section" id="projects">
     <app-dynamic-grid></app-dynamic-grid>
 </section>
 
-<section class="contact flex-center full-section">
-    <div class="form-container">
-        <form action="submit" class="flex-center">
-            <md-grid-list cols="4" rowHeight="50px">
-                <md-grid-tile colspan="4" rowspan="1">
+<section class="contact flex-center full-section" id="contact">
+    <div class="form-container flex-center flex-100">
+        <form action="submit" class="flex-100">
+            <md-grid-list cols="12" rowHeight="64px">
+                <md-grid-tile colspan="1" rowspan="6">
+                    <!--gutter-->
+                </md-grid-tile>
+                <md-grid-tile colspan="2" rowspan="6">
+                    <!--divider-->
+                </md-grid-tile>
+                <md-grid-tile colspan="6" rowspan="1">
                    <h1 class="form-desc flex-100">C O N T A C T</h1>
                 </md-grid-tile>
-                <md-grid-tile colspan="2" rowspan="1">
+                <md-grid-tile colspan="2" rowspan="6">
+                    <!--divider-->
+                </md-grid-tile>
+                <md-grid-tile colspan="1" rowspan="6">
+                    <!--gutter-->
+                </md-grid-tile>
+                <md-grid-tile colspan="3" rowspan="1">
                    <input type="text" placeholder="First Name*" class="flex-100 p-20" required>
                 </md-grid-tile>
-                <md-grid-tile colspan="2" rowspan="1">
+                <md-grid-tile colspan="3" rowspan="1">
                     <input type="text" placeholder="Last Name" class="flex-100 p-20">
                 </md-grid-tile>
-                <md-grid-tile colspan="2" rowspan="1">
-                    <input type="text" placeholder="Email*" class="flex-100 p-20" required>
+                <md-grid-tile colspan="3" rowspan="1">
+                    <input type="text" placeholder="Email*" class="flex-100 p-20" height="100%" required>
                 </md-grid-tile>
-                <md-grid-tile colspan="2" rowspan="1">
-                    <input type="text" placeholder="Estimated Budget" class="flex-100 p-20">
+                <md-grid-tile colspan="3" rowspan="1" class="flex-center">
+                    <span class="flex-auto flex-center">*Requested Field</span>
                 </md-grid-tile>
-                <md-grid-tile colspan="2" rowspan="3">
-                    
-                </md-grid-tile>
-                <md-grid-tile colspan="2" rowspan="3">
+                <md-grid-tile colspan="6" rowspan="2">
                     <textarea name="message" id="form-text" placeholder="Message*" class="flex-100 p-20" required></textarea>
                 </md-grid-tile>
-                <md-grid-tile colspan="2" rowspan="1">
-                    
-                </md-grid-tile>
-                <md-grid-tile colspan="2" rowspan="1">
-                    <span class="flex-100">*Requested Field</span>
-                    <button type="submit" class="flex-100">S E N D</button>
+                <md-grid-tile colspan="6" rowspan="1">
+                    <button md-raised-button type="submit" class="flex-100">S E N D</button>
                 </md-grid-tile>
             </md-grid-list>
         </form>
     </div>
 </section>
-=======
-<h1>
-  {{title}}
-</h1>
->>>>>>> origin/master
+<footer>
+    <md-toolbar class="flex-center"><p>Copyright © Danilo Carandang 2017</p></md-toolbar>
+</footer>

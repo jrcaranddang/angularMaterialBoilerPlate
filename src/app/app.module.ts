@@ -6,19 +6,12 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
 import { DynamicGridComponent } from './dynamic-grid/dynamic-grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DynamicGridComponent
-=======
-
-@NgModule({
-  declarations: [
-    AppComponent
->>>>>>> origin/master
+    DynamicGridComponent,
   ],
   imports: [
     BrowserModule,
