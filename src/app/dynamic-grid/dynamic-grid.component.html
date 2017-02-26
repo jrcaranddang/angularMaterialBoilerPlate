@@ -1,9 +1,46 @@
-<md-grid-list cols="12" rowHeight="64px">
-  <md-grid-tile
+<md-grid-list id="list" cols="12" rowHeight="64px">
+  <!--<md-grid-tile
       *ngFor="let tile of tiles"
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
       [style.background]="tile.color">
     {{tile.text}}
+  </md-grid-tile>-->
+
+  <md-grid-tile colspan="1" rowspan="29" class="gutter"></md-grid-tile>
+
+  <md-grid-tile colspan="6" rowspan="6" id="proj-one">
+    <div class="proj-overlay-1">project one</div>
   </md-grid-tile>
+  <md-grid-tile colspan="4" rowspan="6" id="proj-one-desc">description</md-grid-tile>
+  
+  <md-grid-tile colspan="1" rowspan="29" class="gutter"></md-grid-tile>
+  <md-grid-tile colspan="10" rowspan="1" class="divider"></md-grid-tile>
+
+  <md-grid-tile colspan="4" rowspan="6" id="proj-two-desc">description</md-grid-tile>
+  <md-grid-tile colspan="6" rowspan="6" id="proj-two">
+    <div class="proj-overlay">project two</div>
+  </md-grid-tile>
+
+  <md-grid-tile colspan="10" rowspan="1" class="divider"></md-grid-tile>
+  <md-grid-tile colspan="2" rowspan="6" class="divider"></md-grid-tile>
+
+  <md-grid-tile colspan="4" rowspan="5" id="proj-three">
+    <div class="proj-overlay">project three</div>
+  </md-grid-tile>
+  <md-grid-tile colspan="4" rowspan="3" class="divider"></md-grid-tile>
+  <md-grid-tile colspan="4" rowspan="3" id="proj-three-desc">description</md-grid-tile>
+
+  <md-grid-tile colspan="10" rowspan="1" class="divider"></md-grid-tile>
+  <md-grid-tile colspan="4" rowspan="4" class="divider"></md-grid-tile>
+
+  <md-grid-tile colspan="4" rowspan="5" id="proj-four">
+    <div class="proj-overlay">project four</div>
+  </md-grid-tile>
+  
+  <md-grid-tile colspan="2" rowspan="7" class="divider"></md-grid-tile>
+  
+  <md-grid-tile colspan="4" rowspan="3" id="proj-four-desc">description</md-grid-tile>
+  
+  <md-grid-tile colspan="10" rowspan="1" class="divider"></md-grid-tile>
 </md-grid-list>

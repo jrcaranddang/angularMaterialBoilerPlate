@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { DynamicGridComponent } from './dynamic-grid/dynamic-grid.component';
 
 @Component({
@@ -15,4 +15,8 @@ export class AppComponent {
     
   }
 
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+  //we'll do some stuff here when the window is scrolled
+  }
 }

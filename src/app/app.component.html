@@ -17,14 +17,14 @@
             </button>
         </md-menu>-->
         <ul class="nav flex-center flex-100">
-            <li class="nav-link"><a class="nav-item" href="#about">A B O U T</a></li>
-            <li class="nav-link"><a class="nav-item" href="#project">P R O J E C T S</a></li>
-            <li class="nav-link"><a class="nav-item" href="#contact">C O N T A C T</a></li>
+            <li class="nav-link"><a class="nav-item" href="#about">A B O U T</a><span></span></li>
+            <li class="nav-link"><a class="nav-item" href="#projects">P R O J E C T S</a><span></span></li>
+            <li class="nav-link"><a class="nav-item" href="#contact">C O N T A C T</a><span></span></li>
         </ul>
 </md-toolbar>
 
 <div id="logo">
-    <a href="#">
+    <a href="#intro">
         <h1>
             Da
             <br>
@@ -42,11 +42,9 @@
     </p>
 </div>
 
-<section class="hero flex-center full-section">
+<section id="hero" class="hero flex-center full-section">
     <div class="hero-desc">
-        <h1>
-            Hello!
-        </h1>
+        <h1>Developer based in San Diego, California.</h1>
     </div>
 
     <div id="scroll-down" (click)="scrollDown()">
@@ -55,14 +53,18 @@
 </section>
 
 <div id="fab">
-    <button md-mini-fab><md-icon>arrow_drop_up</md-icon></button>
+    <a href="#hero">   
+        <button md-mini-fab>
+            <md-icon>arrow_drop_up</md-icon>
+        </button>
+    </a>    
 </div>
 
 <section class="about flex-center full-section" id="about">
     <p>This is the section that I tell you about myself and how much I love to code.  Now you know how great I am!</p>
 </section>
 
-<section class="projects full-section" id="projects">
+<section class="projects full-section p-t-50" id="projects">
     <app-dynamic-grid></app-dynamic-grid>
 </section>
 
@@ -98,15 +100,15 @@
                     <span class="flex-auto flex-center">*Requested Field</span>
                 </md-grid-tile>
                 <md-grid-tile colspan="6" rowspan="2">
-                    <textarea name="message" id="form-text" placeholder="Message*" class="flex-100 p-20" required></textarea>
+                    <textarea name="message" id="form-text" placeholder="Message*" class="flex-100 p-20 d-flex m-t-30" required></textarea>
                 </md-grid-tile>
                 <md-grid-tile colspan="6" rowspan="1">
-                    <button md-raised-button type="submit" class="flex-100">S E N D</button>
+                    <button md-raised-button id="submit" type="submit" class="flex-100">S E N D</button>
                 </md-grid-tile>
             </md-grid-list>
         </form>
     </div>
 </section>
 <footer>
-    <md-toolbar class="flex-center"><p>Copyright © Danilo Carandang 2017</p></md-toolbar>
+    <md-toolbar class="flex-center font-12"><p>Copyright © Danilo Carandang 2017</p></md-toolbar>
 </footer>
