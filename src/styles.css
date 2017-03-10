@@ -4,6 +4,7 @@
 :root {
     --primary-color: #03FE9A;
     --accent-color: #03e5fe;
+    --bg-color: #111;
     -webkit-font-smoothing: antialiased;
     color: #fff;
 }
@@ -204,18 +205,20 @@ md-toolbar ul {
 
 /********************about section********************/
 .about {
-    background: #444;
+    background: var(--bg-color);
     min-height: 500px;
     height: 50vh;
 }
 
 /********************projects section********************/
 .projects {
+    background: var(--bg-color);
     height: 100%;
 }
 
 /********************contact section********************/
 .contact {
+    background: var(--bg-color);
 }
 
 md-grid-list .form-container {
@@ -241,4 +244,9 @@ md-grid-list .form-container {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     color: #333;
     border-color: #333;
+}
+
+/*************************footer*************************/
+footer {
+    background: var(--bg-color);
 }
